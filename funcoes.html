@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Javascript</title>
+</head>
+<body>
+  <div class="container">
+      <form id="formulario-01">
+          <input type="text" placeholder="digite um número" name="n1">
+          <input type="text" placeholder="digite um número" name="n2">
+          <input type="text" placeholder="digite um número" name="n3">
+          <input type="text" placeholder="digite um número" name="n4">
+          <button type="submit">Enviar</button>
+      </form>
+      <div id="resultado">
+    </div>
+  </div>
+    <form>
+
+      <p>1. Resolva as operações</p>
+
+      <p>1° Exercício</p>
+      <p>10 + 15 = 
+        <span id = "resultado1">Number</span>
+      </p>
+      <input type="button" onClick="somar1()" 
+        Value="Somar1" />
+
+      <p>2° Exercício</p>
+      <p>"10" + 2 =
+        "<span id = "resultado2">String</span>"
+      </p>
+      <input type="button" onClick="somar2()" 
+        Value="Somar2" />
+
+      <p>3° Exercício</p>
+      <p>"10" * 2 =
+        <span id = "resultado3">Number</span>
+      </p>
+      <input type="button" onClick="multiplicar1()" 
+        Value="Multiplicar1" />
+
+      <p>4° Exercício</p>
+      <p>"10" / 3 =
+        <span id = "resultado4">Float</span>
+      </p>
+      <input type="button" onClick="dividir1()" 
+        Value="Dividir1" />
+
+      <p>5° Exercício</p>
+      <p>"10" % 3 =
+        <span id = "resultado5">Float</span>
+      </p>
+      <input type="button" onClick="restoDivisao()" 
+        Value="RestoDivisao" />
+
+      <p>6° Exercício</p>
+      <p>10 + true =
+        <span id = "resultado6">Number</span>
+      </p>
+      <input type="button" onClick="somar3()" 
+        Value="Somar3" />
+
+      <p>7° Exercício</p>
+      <p>10 == "10" =
+        <span id = "resultado7">Boolean</span>
+      </p>
+      <input type="button" onClick="igualdadeValor()" 
+        Value="IgualdadeValor" />
+
+        <p>8° Exercício</p>
+        <p>10 === "10" =
+          <span id = "resultado8">Boolean</span>
+        </p>
+        <input type="button" onClick="igualdadeTipo()" 
+          Value="IgualdadeTipo" />
+
+        <p>9° Exercício</p>
+        <p>10 < 11 =
+          <span id = "resultado9">Boolean</span>
+        </p>
+        <input type="button" onClick="menorQue()" 
+          Value="MenorQue" />
+
+        <p>10° Exercício</p>
+        <p>10 > 12 =
+          <span id = "resultado10">Boolean</span>
+        </p>
+        <input type="button" onClick="maiorQue1()" 
+          Value="MaiorQue1" />
+
+        <p>11° Exercício</p>
+        <p>10 <= 10.1 =
+          <span id = "resultado11">Boolean</span>
+        </p>
+        <input type="button" onClick="menorIgual()" 
+          Value="ManorIgual" />
+
+        <p>12° Exercício</p>
+        <p>10 > 9.99 =
+          <span id = "resultado12">Boolean</span>
+        </p>
+        <input type="button" onClick="maiorQue2()" 
+          Value="MaiorQue2" />
+
+        <p>13° Exercício</p>
+        <p>10 != "dez" =
+          <span id = "resultado13">Boolean</span>
+        </p>
+        <input type="button" onClick="diferencaSentenca()" 
+          Value="DiferencaSentenca" />
+          
+        <p>14° Exercício</p>
+        <p>10 + true =
+          <span id = "resultado14">Number</span>
+        </p>
+        <input type="button" onClick="somar4()" 
+          Value="Somar4" />
+
+        <p>15° Exercício</p>
+        <p>"dez" + true =
+          <span id = "resultado15">String</span>
+        </p>
+        <input type="button" onClick="somar5()" 
+          Value="Somar5" />
+
+        <p>16° Exercício</p>
+        <p>10 + false =
+          <span id = "resultado16">Number</span>
+        </p>
+        <input type="button" onClick="somar6()" 
+          Value="Somar6" />
+
+        <p>17° Exercício</p>
+        <p>10 * false =
+          <span id = "resultado17">Number</span>
+        </p>
+        <input type="button" onClick="somar7()" 
+          Value="Somar7" />
+
+        <p>18° Exercício</p>
+        <p>true + true =
+          <span id = "resultado18">Number</span>
+        </p>
+        <input type="button" onClick="somar8()" 
+          Value="Somar8" />
+
+        <p>19° Exercício</p>
+        <p>10 ++ =
+          <span id = "resultado19">Number</span>
+        </p>
+        <input type="button" onClick="incremento()" 
+          Value="Incremento" />
+
+        <p>20° Exercício</p>
+        <p>10 -- =
+          <span id = "resultado20">Number</span>
+        </p>
+        <input type="button" onClick="decremento()" 
+          Value="Decremento" />
+
+        <p>21° Exercício</p>
+        <p>1 & 1 =
+          <span id = "resultado21">Number</span>
+        </p>
+        <input type="button" onClick="and1()" 
+          Value="And1" />
+
+        <p>22° Exercício</p>
+        <p>1 & 0 =
+          <span id = "resultado22">Number</span>
+        </p>
+        <input type="button" onClick="and2()" 
+          Value="And2" />
+
+        <p>23° Exercício</p>
+        <p>0 & 0 =
+          <span id = "resultado23">Number</span>
+        </p>
+        <input type="button" onClick="and3()" 
+          Value="And3" />
+
+        <p>24° Exercício</p>
+        <p>0 & 1 =
+          <span id = "resultado24">Number</span>
+        </p>
+        <input type="button" onClick="and4()" 
+          Value="And4" />
+
+        <p>25° Exercício</p>
+        <p>0 / 1 =
+          <span id = "resultado25">Number</span>
+        </p>
+        <input type="button" onClick="dividir2()" 
+          Value="Dividir2" />
+        
+        <p>26° Exercício</p>
+        <p>5 + 5 == 10 =
+          <span id = "resultado26">Boolean</span>
+        </p>
+        <input type="button" onClick="somarIgualdade1()" 
+          Value="SomarIgualdade1" />
+
+        <p>27° Exercício</p>
+        <p>"5" + "5" == 10 =
+          <span id = "resultado27">Boolean</span>
+        </p>
+        <input type="button" onClick="somarIgualdade2()" 
+          Value="SomarIgualdade2" />
+
+        <p>28° Exercício</p>
+        <p>"5" * 2 > 9 =
+          <span id = "resultado28">Boolean</span>
+        </p>
+        <input type="button" onClick="multiplicarMaior()" 
+          Value="MultiplicarMaior" />
+
+        <p>29° Exercício</p>
+        <p>(10 + 10) * 2 =
+          <span id = "resultado29">Number</span>
+        </p>
+        <input type="button" onClick="somarMultiplicar1()" 
+          Value="SomarMultiplicar1" />
+
+        <p>30° Exercício</p>
+        <p>10 + 10 * 2 =
+          <span id = "resultado30">Number</span>
+        </p>
+        <input type="button" onClick="somarMultiplicar2()" 
+          Value="SomarMultiplicar2" />
+
+        <p>2. Resolva as perguntas de acordo com as variáveis.</p>
+
+        <p>1° Exercício</p>
+        <p>branco = "preto"
+          <span id = "resposta1">Comparaçao1</span>
+        </p>
+        <input type="button" onClick="comparacao1()" 
+          Value="Comparacao1" />
+
+        <p>2° Exercício</p>
+        <p>preto = "cinza"
+          <span id = "resposta2">Comparação2</span>
+        </p>
+        <input type="button" onClick="comparacao2()" 
+          Value="Comparacao2" />
+
+        <p>3° Exercício</p>
+        <p>cinza = "branco"
+          <span id = "resposta3">Comparação3</span>
+        </p>
+        <input type="button" onClick="comparacao3()" 
+          Value="Comparacao3" />
+
+        <p>4° Exercício</p>
+        <p>carro = "preto"
+          <span id = "resposta4">Comparação4</span>
+        </p>
+        <input type="button" onClick="comparacao4()" 
+          Value="Comparacao4" />
+
+        <p>5° Exercício</p>
+          <p>valor = 30000 - 3000 / 750 =
+        <span id = "resposta5">Number</span>
+        </p>
+        <input type="button" onClick="operacao1()" 
+           Value="Operacao1" />
+        
+        <p>6° Exercício</p>
+          <p>Soma das variáveis =
+        <span id = "resposta6">String</span> 16 caracteres
+        </p>
+        <input type="button" onClick="operacao2()" 
+           Value="Operacao2" />
+
+    </form>
+  <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
