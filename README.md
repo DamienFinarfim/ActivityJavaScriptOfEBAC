@@ -1,3 +1,3 @@
-# Atividade_EBAC_JS
+### Atividade da EBAC no JavaScript
 
-## Lista de atividades concluida através do JavaScript
+## Lista de atividades concluida fazendo uso da linguagem JavaScript.
